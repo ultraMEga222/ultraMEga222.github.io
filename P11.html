@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="main2.css">
+	
+	<title>Práctica 11</title>
+	<style>
+		.content {
+			background-image: url(https://unsplash.it/1000/1000);
+			height: 200vh;
+			background-size: cover;
+			background-color: #333;
+			color: white;
+			background-blend-mode: multiply;
+			display: grid;
+			place-items: center;
+			position: relative;
+	
+		}
+		body {
+			margin: 0;
+			font-family: "Work Sans", sans-serif;
+			font-weight: 400;
+		}
+		.pingas header {
+			position: fixed;
+			background-color: rgb(173, 162, 29);
+			width: 100%;
+			text-align: center;
+			z-index: 999;
+			display: grid;
+			grid-template-columns: 1fr auto minmax(600px,5fr) 1fr;
+		}
+	    .logo {
+			grid-column: 2 / span 1;
+			s
+		}
+		.pingas {
+
+		}
+		.pingas nav {
+			grid-column: 3 / span 1;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		.pingas nav ul {
+			display: flex;
+			justify-content: flex-end;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			position: relative;
+		}
+		.pingas nav li {
+			margin-left: 1em;
+			position: relative;
+			margin-bottom: 0;
+		}
+		.pingas nav a {	
+			color: #444;
+     		text-decoration: none;
+     		position: relative;
+     		text-transform: uppercase;
+      		font-size: 14px;
+   
+		}
+		.pingas nav a:hover { 
+			color: #000;
+		}
+		.pingas nav a:before {
+			content: "";
+			display: block;
+			height: 5px;
+      		width: 100%;
+			background-color: #444;
+			
+			position: absolute;
+			bottom: -0.5em;
+			left: 0;
+			transform: scaleX(0);
+			transition: transform 250ms;
+		}
+		.pingas nav a:hover:before {
+			transform: scaleX(1);
+		}
+
+	</style>	
+</head>
+
+
+<body>
+  <div class="grid-layout">
+	<header>
+		<h1>Prácticas HTML/CSS</h1>
+        <p class="header__left-side"><strong>Nombre y apellidos: David Cabezas Durán</strong></p>
+        <p class="header__right-side"><strong>Grupo: 4.A</strong></p>
+     </header>
+     <nav class="ostia">
+        <a href="">Práctica 1</a>
+     	<a href="">Práctica 2</a>
+     	<a href="">Práctica 3</a>
+     	<a href="">Práctica 4</a>
+     	<a href="">Práctica 5</a>
+     	<a href="">Práctica 6</a>
+     	<a href="">Práctica 7</a>
+     	<a href="">Práctica 8</a>
+     	<a href="">Práctica 9</a>
+     	<a href="">Práctica 10</a>
+     	<a href="">Práctica 11</a>
+     	<a href="">Práctica 12</a>
+     	<a href="">Práctica 12a</a>
+     	<a href="">Práctica 12b</a>
+     	<a href="">Práctica 12c</a>
+     	<a href="">Práctica 13</a>
+     	<a href="">Práctica 14</a>
+
+     </nav> 
+    <div class="main">
+    <div class="pingas">
+
+	
+ 
+      	
+  		<header>
+	<img class="logo" src="https://raw.githubusercontent.com/sorolla-eso/sorolla-eso.github.io/master/logo.png" width="64px" alt="">
+	<nav>
+  	  <ul>
+    	    <li><a href="">Inicio</a></li>
+    	    <li><a href="">Asignaturas</a></li>
+    	    <li><a href="">Secretaria</a></li>
+    	    <li><a href="">Contacto</a></li>
+  	  </ul>
+	</nav>
+  </header>
+  </div>
+
+  <div class="content">
+	<h2>El contenido aquí...</h2>
+  </div>
+</body>
+
+</html>
