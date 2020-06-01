@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Práctica 12B</title>
+    <style>
+        body {
+            background: #353535;
+            color: #c4c4c4;
+            font-size: 1.2em;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-rows: repeat(8,1fr);
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: 20px;
+        }
+        .portfolio-item {
+            background: #f96855;
+            font-size: 1.2em;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .large {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+        .tall {
+            grid-column: span 2;
+            grid-row: span 3;
+        }
+        .wide {
+            grid-row: span 2;
+            grid-column: span 3;
+        }
+        .small {
+            grid-row: span 1;
+            grid-column:  span 1;
+        }
+        .medium {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+	
+</head>
+<body>
+    <div class="grid-layout">
+    <header>
+        <h1>Prácticas HTML/CSS</h1>
+        <p class="header__left-side"><strong>Nombre y apellidos: David Cabezas Durán</strong></p>
+        <p class="header__right-side"><strong>Grupo: 4.A</strong></p>
+     </header>
+     <nav class="ostia">
+        <a href="">Práctica 1</a>
+        <a href="">Práctica 2</a>
+        <a href="">Práctica 3</a>
+        <a href="">Práctica 4</a>
+        <a href="">Práctica 5</a>
+        <a href="">Práctica 6</a>
+        <a href="">Práctica 7</a>
+        <a href="">Práctica 8</a>
+        <a href="">Práctica 9</a>
+        <a href="">Práctica 10</a>
+        <a href="">Práctica 11</a>
+        <a href="">Práctica 12</a>
+        <a href="">Práctica 12a</a>
+        <a href="">Práctica 12b</a>
+        <a href="">Práctica 12c</a>
+        <a href="P13.html">Práctica 13</a>
+        <a href="">Práctica 14</a>
+
+     </nav> 
+    <div class="main">
+    <div class="portfolio">
+        <div class="portfolio-item medium">medio</div>
+        <div class="portfolio-item large">grande</div>
+        <div class="portfolio-item medium">medio</div>
+        <div class="portfolio-item small">pequeño</div>
+        <div class="portfolio-item tall">alto</div>
+        <div class="portfolio-item wide">ancho</div>
+        <div class="portfolio-item wide">ancho</div>
+        <div class="portfolio-item medium">medio</div>
+    </div>
+</body>
+
+</body>
+
+	
+</body>
+</html>
